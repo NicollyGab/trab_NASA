@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/assets/style.css" type="text/css">
+
+    <title>Picture Day</title>
+
+</head>
+
+<body>
+    <nav>
+        <div class="logo-nasa">
+            <a href="projetoEs.html">Fotos astronomicas NASA</a>
+        </div>
+    </nav>
+        <header>
+            <form>
+                <label for="datepiceker">Coloque uma data:
+                    <input id="datepicker" type="date" min="" max="">
+                    <button type="button" id="consult" type="button">Consultar</button>
+                </label>
+            </form>
+        </header>
+
+        <section class="titulo-section">
+            <h2 id="title" onclick="changeVisible();"></h2>
+            <p id="date" onclick="changeVisible();"></p>
+            <small style="display: block;" id="copyright" onclick="changeVisible();"></small>
+        </section>
+
+        <section id="media-section">
+        </section>
+
+        <div class="descricao-imgs">
+            <p id="description" onclick="changeVisible();"></p>
+        </div>
+        <script src="/controls/app.js"></script>
+        
+</body>
+
+</html>
